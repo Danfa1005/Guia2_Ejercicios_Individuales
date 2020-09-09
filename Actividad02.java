@@ -13,7 +13,9 @@ public class Actividad02
         r = teclado.nextDouble();
         
         //Calculo e impresion de resultados
-        areaSom2 = (Math.PI-2)*(r*r);
-        System.out.println("El area sombreada entre el circulo y  el cuadrado inscrito es: " + areaSom2);
+        areaCuadrado = (Math.sqrt(((r*r)/2)))*(Math.sqrt(((r*r)/2)));
+        areaCirculo = Math.PI*(r*r);
+        areaSombreada = areaCirculo - areaCuadrado;
+        System.out.println("El area sombreada entre el circulo y  el cuadrado inscrito es: " + areaSombreada);
     } //Fin de main
 } //Fin de actividad02
